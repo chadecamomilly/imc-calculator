@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcule seu IMC</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/style.css"></head>
 
 <body>
     <section class="container">
@@ -41,7 +40,7 @@
             <input type="text" id="peso">
 
             <label for="altura">Altura</label>
-            <input type="text" id="altura">
+            <input type="text" id="altura" onchange="this.value = this.value.replace(/,/g, '.')">
             <button type="submit">Calcular</button>
         </form>
 
